@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,5 +31,43 @@
 
     
 <script src="script/script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Direct Link Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Direct Link Generator</h1>
+        <input type="file" id="photoUpload" accept="image/*" />
+        <select id="expirationTime">
+            <option value="300">5 minutes</option>
+            <option value="900">15 minutes</option>
+            <option value="3600">1 hour</option>
+            <option value="10800">3 hours</option>
+            <option value="604800">1 week</option>
+            <option value="2592000">1 month</option>
+            <option value="0">Don't auto delete</option>
+        </select>
+        <button onclick="generateLink()" class="gbtn">Generate Link</button>
+
+        <div class="loading" id="loadingSpinner"></div>
+
+        <div class="link-box" id="linkBox">
+            <p>Direct Link:</p>
+            <input type="text" id="photoLink" readonly />
+            <div class="link-actions">
+                <button onclick="copyLink()">Copy Link</button>
+                <button onclick="viewImage()">View Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
 </body>
 </html>

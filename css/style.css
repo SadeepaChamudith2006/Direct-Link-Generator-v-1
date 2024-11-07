@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -71,6 +71,151 @@ body {
     transform: translate(50%, 50%);
 }
 /* Loading spinner */
+/* .loading {
+    display: none;
+    margin: 20px auto;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #4CAF50;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin: 15px 0;
+        }
+        select, button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .link-box {
+            margin-top: 20px;
+            display: none;
+        }
+        .link-box input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .link-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .loading {
+            display: none;
+            margin: 20px auto;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4CAF50;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        } */ 
+
+        /* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center;    
+    background-color: black;    
+}
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+    box-shadow: 0 0 50px rgb(255, 238, 0);
+    text-shadow: 0 0 100px #ff0000;
+    max-width: 300px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+.h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px black, 0 0 25px rgb(255, 37, 37), 0 0 5px rgb(255, 0, 0);    
+
+}
+input[type="file"] {
+    margin: 15px 0;
+}
+select, button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.gbtn{
+
+    background-color: transparent; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #008CBA;
+    box-shadow: #ea00ff;
+    border-radius: 10px;    
+}
+.link-box {
+    margin-top: 20px;
+    display: none;
+}
+.link-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+.link-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
 .loading {
     display: none;
     margin: 20px auto;
@@ -84,4 +229,21 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.cbtn{
+    background-color: transparent; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #03ff0f;
+    box-shadow: #ea00ff;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+.vbtn{
+    background-color: transparent; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #ff00ea;
+    box-shadow: #ea00ff;
+    border-radius: 10px;    
 }
