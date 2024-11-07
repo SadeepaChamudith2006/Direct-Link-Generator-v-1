@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Direct Link Generator</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div>
+        <h1 class="h1">Direct Link Generator</h1>
+    </div>
+        <input type="file" id="photoUpload" accept="image/*" />
+        <br>
+        <button onclick="generateLink()">Generate Link</button>
+
+        <div class="loading" id="loadingSpinner"></div>
+
+        <div class="link-box" id="linkBox">
+            <p>Direct Link:</p>
+            <input type="text" id="photoLink" readonly />
+            <div class="link-actions">
+                <button onclick="copyLink()">Copy Link</button>
+                <button onclick="viewImage()">View Image</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    
+<script src="script/script.js"></script>
+</body>
+</html>
