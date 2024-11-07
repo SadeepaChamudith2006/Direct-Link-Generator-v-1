@@ -1,7 +1,7 @@
 async function generateLink() {
     const fileInput = document.getElementById('photoUpload');
     const file = fileInput.files[0];
-    const apiKey = 'a9f9a2f49ab92ab38c309aec8aa2b8d9';  // Replace with your ImgBB API key
+    const apiKey = '2567d8d22a747c447cf6ebe0743e16ae';  // Replace with your ImgBB API key
 
     if (!file) {
         alert('Please select an image file.');
